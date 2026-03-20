@@ -40,7 +40,6 @@ class TicTacToe:
                 self.players_queue.appendleft(curr_player)
                 continue
             self.players_queue.append(curr_player)
-            # Check for winner or draw here (not implemented in this snippet)
             isWinner = self.board.check_winner(curr_player.get_peice())
             if isWinner:
                 self.board.print_board()
