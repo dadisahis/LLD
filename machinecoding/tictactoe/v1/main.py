@@ -1,4 +1,4 @@
-from TicTacToe import TicTacToe
+from machinecoding.tictactoe.v1.TicTacToe import TicTacToe
 
 def main():
     size = int(input("Enter the size of the board: "))
