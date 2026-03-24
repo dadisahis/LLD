@@ -1,4 +1,4 @@
-from PubSubService import PubSubService
+from machinecoding.pubsubSystem.v1.PubSubService import PubSubService
 from entities.SubscrberStrategy import *
 def main():
     service = PubSubService.get_instance()
