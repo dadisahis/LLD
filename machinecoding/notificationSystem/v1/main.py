@@ -1,4 +1,4 @@
-from NotificationService import NotificationService
+from machinecoding.notificationSystem.v1.NotificationService import NotificationService
 from entities.Recipient import Recipient
 from entities.Notification import *
 def main():
