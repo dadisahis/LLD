@@ -27,9 +27,7 @@ class TicTacToe:
         while noWinner:
             curr_player = self.players_queue.popleft()
             self.board.print_board()
-            if self.board.get_free_cells() == []:
-                print("It's a draw!")
-                break
+            
             print(f"{curr_player.get_name()}'s turn. Your piece is {curr_player.get_peice()}")
             row = int(input("Enter row: ")) 
             col = int(input("Enter column: "))
@@ -45,5 +43,9 @@ class TicTacToe:
                 self.board.print_board()
                 print(f"{curr_player.get_name()} wins!")
                 noWinner = False
+
+            if self.board.get_free_cells() == []:
+                print("It's a draw!")
+                break
 
     
