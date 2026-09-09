@@ -29,4 +29,7 @@ if __name__ == "__main__":
     print(f"Same instance: {c1 is c2}")
     for _ in range(5):
         c1.increment()
-    print(f"Count after 5 increments: {c1.get_count()}")
+    print(f"Count after 5 increments: {c1.get_count()}, {c2.get_count()}")
+
+
+
